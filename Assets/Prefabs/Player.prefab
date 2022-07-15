@@ -350,6 +350,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCam: {fileID: 1830163055779862975}
   orientation: {fileID: 8243503502893144698}
+  arena: {fileID: 0}
+  mainPlayer: {fileID: 6640829460055960394}
   moveSpeed: 4500
   maxSpeed: 20
   grounded: 0

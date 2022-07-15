@@ -30,6 +30,6 @@ public class Gun : MonoBehaviour
         }
         
         GameObject bullet = Instantiate(Projectile, transform.position, Quaternion.identity);
-        bullet.GetComponent<Bullet>().rb.AddForce((directionVector * 2)   * 1000);
+        bullet.GetComponent<Bullet>().rb.AddForce(directionVector * (2 * 1000));
     }
 }

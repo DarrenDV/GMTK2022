@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour {
     //Assingables
     public Transform playerCam;
     public Transform orientation;
+
+    public GameObject arena;
+    public GameObject mainPlayer;
     
     //Other
     private Rigidbody rb;
@@ -65,6 +68,15 @@ public class PlayerMovement : MonoBehaviour {
     private void Update() {
         MyInput();
         Look();
+
+        if (grounded)
+        {
+            mainPlayer.transform.parent = arena.transform;
+        }
+        else
+        {
+            mainPlayer.transform.parent = null;
+        }
     }
 
     /// <summary>
