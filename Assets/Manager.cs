@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Manager : MonoBehaviour
 {
+
+    private static Manager instance;
+    
+    
     public GameObject Dice;
     public DiceRoll diceRoll;
 
@@ -13,10 +17,33 @@ public class Manager : MonoBehaviour
 
     public DiceLava diceLava;
 
-    // Start is called before the first frame update
-    void Start()
+    public ArenaSpinning arenaSpinning;
+
+    public bool effectActive;
+
+    public static Manager Instance
     {
+        get
+        {
+            if (instance is null)
+            {
+                instance = GameObject.FindObjectOfType<Manager>();
+            }
+            return instance;
+        }
+    }
         
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+            return;
+        }
+        else
+        {
+            instance = this;
+        }
     }
 
     public void ExecuteDiceResult(string diceSide)
@@ -24,15 +51,15 @@ public class Manager : MonoBehaviour
         switch (diceSide)
         {
             case "1":
-                diceLava.StartDiceLava();
+                arenaSpinning.DiceEffect();
                 break;
             
             case "2":
-                diceLava.StartDiceLava();
+                arenaSpinning.DiceEffect();
                 break;
             
             case "3":
-                diceLava.StartDiceLava();
+                arenaSpinning.DiceEffect();
                 break;
             
             case "4":
