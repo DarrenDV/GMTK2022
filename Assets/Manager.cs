@@ -19,6 +19,7 @@ public class Manager : MonoBehaviour
     public SpikeGenerator spikeGenerator;
     public ArenaSpinning arenaSpinning;
     public RoulletteBallShooter roulletteBallShooter;
+    public Guns guns;
 
     //Other references
     [SerializeField] private Text diceMessage;
@@ -82,8 +83,8 @@ public class Manager : MonoBehaviour
                 break;
 
             case "6":
-                //TODO ADD EFFECT
-                DiceMessage("Dikke pasta saus");
+                guns.DiceEffect();
+                DiceMessage("Faster guns!");
                 break;
         }
     }
