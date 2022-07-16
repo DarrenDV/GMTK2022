@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DiceSide
   - Lava
+  - Wall
   layers:
   - Default
   - TransparentFX

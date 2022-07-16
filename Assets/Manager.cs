@@ -18,8 +18,8 @@ public class Manager : MonoBehaviour
     public DiceLava diceLava;
     public FallingFromSky fallingFromSky;
     public SpikeGenerator spikeGenerator;
-
     public ArenaSpinning arenaSpinning;
+    public RoulletteBallShooter roulletteBallShooter;
 
     public bool effectActive;
 
@@ -69,7 +69,7 @@ public class Manager : MonoBehaviour
                 break;
             
             case "5":
-                //TODO ADD EFFECT
+                roulletteBallShooter.DiceEffect();
                 break;
             
             case "6":
