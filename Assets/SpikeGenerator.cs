@@ -16,10 +16,8 @@ public class SpikeGenerator : MonoBehaviour
     
     public GameObject spikeWarning;
     public GameObject spike;
-    
-    
-    
-    
+
+
     public void RunDiceEffect()
     {
         Manager.Instance.effectActive = true;
@@ -47,8 +45,8 @@ public class SpikeGenerator : MonoBehaviour
 
     private void SpawnSpikes()
     {
-        //TODO play spike sound
-        
+        //Spikes audio
+        gameObject.GetComponent<AudioSource>().Play();
         
         foreach (Transform child in spikeWarningParent.transform)
         {
