@@ -54,6 +54,7 @@ public class Guns : MonoBehaviour
             foreach (GameObject gun in guns)
             {
                 ShootGun(gun);
+                gameObject.GetComponent<AudioSource>().Play();
             }
 
             if (diceEffect)
@@ -61,6 +62,7 @@ public class Guns : MonoBehaviour
                 foreach (GameObject gun in specials)
                 {
                     ShootGun(gun);
+                    gameObject.GetComponent<AudioSource>().Play();
                 }
             }
         }
