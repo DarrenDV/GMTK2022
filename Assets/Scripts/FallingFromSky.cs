@@ -12,7 +12,7 @@ public class FallingFromSky : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartSpawning();
+        //StartSpawning();
     }
 
     public void StartSpawning()
@@ -29,6 +29,7 @@ public class FallingFromSky : MonoBehaviour
     {
         Vector3 positionOffset = new Vector3(Random.Range(-fallingSize, fallingSize), 0, Random.Range(-fallingSize, fallingSize));
         Vector3 instantiatePosition = positionOffset + gameObject.transform.position;
-        Instantiate(fallingObjects[0], instantiatePosition, Quaternion.identity);
+        //Vector3 instantiateRotation = new Vector3(Random.Range(-180, 180), 0, Random.Range(-180, 180));
+        Instantiate(fallingObjects[1], instantiatePosition, Quaternion.Euler(Random.Range(-180, 180), Random.Range(-180, 180), Random.Range(-180, 180)));
     }
 }

@@ -4,18 +4,79 @@ using UnityEngine;
 
 public class Manager : MonoBehaviour
 {
+
+    private static Manager instance;
+    
+    
     public GameObject Dice;
     public DiceRoll diceRoll;
 
     public bool hasThrown;
 
     public GameObject diceCamImage;
-    
-    // Start is called before the first frame update
-    void Start()
+
+    public DiceLava diceLava;
+    public FallingFromSky fallingFromSky;
+
+    public ArenaSpinning arenaSpinning;
+
+    public bool effectActive;
+
+    public static Manager Instance
     {
-        
+        get
+        {
+            if (instance is null)
+            {
+                instance = GameObject.FindObjectOfType<Manager>();
+            }
+            return instance;
+        }
     }
+        
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+            return;
+        }
+        else
+        {
+            instance = this;
+        }
+    }
+
+    public void ExecuteDiceResult(string diceSide)
+    {
+        switch (diceSide)
+        {
+            case "1":
+                arenaSpinning.DiceEffect();
+                break;
+            
+            case "2":
+                arenaSpinning.DiceEffect();
+                break;
+            
+            case "3":
+                arenaSpinning.DiceEffect();
+                break;
+            
+            case "4":
+                fallingFromSky.StartSpawning();
+                break;
+            
+            case "5":
+                fallingFromSky.StartSpawning();
+                break;
+            
+            case "6":
+                fallingFromSky.StartSpawning();
+                break;
+        }
+    }
+    
 
     // Update is called once per frame
     void Update()
@@ -26,6 +87,11 @@ public class Manager : MonoBehaviour
             hasThrown = true;
             diceRoll.Throw();
             
+        }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            diceLava.StartDiceLava();
         }
     }
 }
