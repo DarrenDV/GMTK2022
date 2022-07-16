@@ -20,6 +20,7 @@ public class Manager : MonoBehaviour
     public SpikeGenerator spikeGenerator;
     public ArenaSpinning arenaSpinning;
     public RoulletteBallShooter roulletteBallShooter;
+    public Guns guns;
 
     public bool effectActive;
 
@@ -73,7 +74,7 @@ public class Manager : MonoBehaviour
                 break;
             
             case "6":
-                //TODO ADD EFFECT
+                guns.DiceEffect();
                 break;
         }
     }
