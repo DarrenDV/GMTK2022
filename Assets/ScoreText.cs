@@ -19,6 +19,7 @@ public class ScoreText : MonoBehaviour
         while (true)
         {
             score += scorePerSecond / 4;
+            Scoring.totalScore += 5;
             yield return new WaitForSeconds(0.25f);
             text.text = "Score: " + score.ToString("0");
         }
