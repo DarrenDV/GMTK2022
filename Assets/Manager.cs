@@ -28,6 +28,10 @@ public class Manager : MonoBehaviour
 
     public bool effectActive;
 
+
+    [SerializeField] private float firstDiceTime = 5f;
+    public float timeBetweenRolls = 10f;
+
     public static Manager Instance
     {
         get
@@ -51,6 +55,53 @@ public class Manager : MonoBehaviour
         {
             instance = this;
         }
+    }
+
+    private void Start()
+    {
+        StartCoroutine(FirstDiceRoll());
+    }
+
+    private IEnumerator FirstDiceRoll()
+    {
+        yield return new WaitForSeconds(firstDiceTime);
+        RollDice();
+        StopCoroutine(FirstDiceRoll());
+    }
+
+    private void RollDice()
+    {
+        diceCamImage.SetActive(true);
+        hasThrown = true;
+        diceRoll.Throw();
+    }
+
+    public void EffectHasStopped()
+    {
+        effectActive = false;
+        StartCoroutine(DiceRollTimer());
+    }
+
+    private IEnumerator DiceRollTimer()
+    {
+        while(effectActive)
+        {
+            yield return null;
+        }
+        
+        yield return new WaitForSeconds(timeBetweenRolls);
+        RollDice();
+        
+        if (timeBetweenRolls > 0)
+        {
+            timeBetweenRolls -= 0.5f;
+        }
+        else
+        {
+            timeBetweenRolls = 0;
+        }
+        
+        StopCoroutine(DiceRollTimer());
     }
 
     public void ExecuteDiceResult(string diceSide)
@@ -84,29 +135,11 @@ public class Manager : MonoBehaviour
 
             case "6":
                 guns.DiceEffect();
-                DiceMessage("Faster guns!");
+                DiceMessage("More guns!");
                 break;
         }
     }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            diceCamImage.SetActive(true);
-            hasThrown = true;
-            diceRoll.Throw();
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            diceLava.StartDiceLava();
-        }
-    }
-
+    
     private void DiceMessage(string message)
     {
         diceMessage.text = message;

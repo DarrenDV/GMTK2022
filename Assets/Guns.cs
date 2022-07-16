@@ -41,7 +41,7 @@ public class Guns : MonoBehaviour
         yield return new WaitForSeconds(diceEffectAlive);
         diceEffect = false;
         specialParent.SetActive(false);
-        Manager.Instance.effectActive = false;
+        Manager.Instance.EffectHasStopped();
         StopCoroutine(DiceEffectTime());
     }
     

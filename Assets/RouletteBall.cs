@@ -55,7 +55,7 @@ public class RouletteBall : MonoBehaviour
     private IEnumerator Die()
     {
         yield return new WaitForSeconds(timeAlive);
-        Manager.Instance.effectActive = false;
+        Manager.Instance.EffectHasStopped();
         Destroy(gameObject);
     }
 

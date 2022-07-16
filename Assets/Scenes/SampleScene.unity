@@ -496,6 +496,8 @@ MonoBehaviour:
   guns: {fileID: 624739365}
   diceMessage: {fileID: 499603403}
   effectActive: 0
+  firstDiceTime: 5
+  timeBetweenRolls: 10
 --- !u!4 &105770371
 Transform:
   m_ObjectHideFlags: 0
@@ -2661,7 +2663,7 @@ MonoBehaviour:
   bullet: {fileID: 7145879813914981991, guid: d517ae8c36682684bafd17a445290536, type: 3}
   totem: {fileID: 1632194926}
   specialParent: {fileID: 1493389585}
-  gunStrength: 100
+  gunStrength: 10
   timeBetweenShots: 1
   diceEffect: 0
   diceEffectAlive: 5
@@ -3571,7 +3573,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &863514033
 Transform:
   m_ObjectHideFlags: 0
