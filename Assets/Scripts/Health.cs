@@ -24,7 +24,7 @@ public class Health : MonoBehaviour
         {
             Die();
         }
-        
+        Debug.Log("Taking damage:" + damage);
     }
 
     void Die()
