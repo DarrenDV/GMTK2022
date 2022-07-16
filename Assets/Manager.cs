@@ -10,7 +10,9 @@ public class Manager : MonoBehaviour
     public bool hasThrown;
 
     public GameObject diceCamImage;
-    
+
+    public DiceLava diceLava;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,11 @@ public class Manager : MonoBehaviour
             hasThrown = true;
             diceRoll.Throw();
             
+        }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            diceLava.StartDiceLava();
         }
     }
 }
