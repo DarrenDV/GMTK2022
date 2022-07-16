@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
@@ -11,10 +11,13 @@ public class Health : MonoBehaviour
     public int maxHealth = 100;
     [SerializeField] private ScoreText scoreText;
 
+    [SerializeField] private Slider healthSlider;
+
     // Start is called before the first frame update
     void Start()
     {
         health = maxHealth;
+        UpdateHealth();
     }
 
     public void TakeDamage(int damage)
@@ -25,6 +28,12 @@ public class Health : MonoBehaviour
             Die();
         }
         Debug.Log("Taking damage:" + damage);
+        UpdateHealth();
+    }
+
+    void UpdateHealth()
+    {
+        healthSlider.value = health;
     }
 
     void Die()
