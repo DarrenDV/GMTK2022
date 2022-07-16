@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 48143842}
   - component: {fileID: 48143841}
   - component: {fileID: 48143840}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -583,6 +583,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Queen
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fdebaff329f1a83449511e040689ecc9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: fdebaff329f1a83449511e040689ecc9, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -699,7 +703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 183084159}
   - component: {fileID: 183084158}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpikeGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,7 +907,7 @@ GameObject:
   - component: {fileID: 320136175}
   - component: {fileID: 320136174}
   - component: {fileID: 320136173}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -998,7 +1002,7 @@ GameObject:
   - component: {fileID: 324653042}
   - component: {fileID: 324653041}
   - component: {fileID: 324653040}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1372,7 +1376,7 @@ GameObject:
   - component: {fileID: 450404488}
   - component: {fileID: 450404487}
   - component: {fileID: 450404486}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1562,7 +1566,7 @@ GameObject:
   - component: {fileID: 469482844}
   - component: {fileID: 469482843}
   - component: {fileID: 469482842}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1923,7 +1927,7 @@ GameObject:
   - component: {fileID: 552976052}
   - component: {fileID: 552976051}
   - component: {fileID: 552976050}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2015,7 +2019,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 560656165}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Outer walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2068,7 +2072,7 @@ GameObject:
   - component: {fileID: 560815616}
   - component: {fileID: 560815615}
   - component: {fileID: 560815614}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2163,7 +2167,7 @@ GameObject:
   - component: {fileID: 561016367}
   - component: {fileID: 561016366}
   - component: {fileID: 561016365}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2330,7 +2334,7 @@ GameObject:
   - component: {fileID: 589964793}
   - component: {fileID: 589964792}
   - component: {fileID: 589964791}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2425,7 +2429,7 @@ GameObject:
   - component: {fileID: 623723460}
   - component: {fileID: 623723459}
   - component: {fileID: 623723458}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpecialGuns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2614,7 +2618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 624739364}
   - component: {fileID: 624739365}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Guns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2679,7 +2683,7 @@ GameObject:
   - component: {fileID: 654481695}
   - component: {fileID: 654481694}
   - component: {fileID: 654481693}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2774,7 +2778,7 @@ GameObject:
   - component: {fileID: 654583239}
   - component: {fileID: 654583238}
   - component: {fileID: 654583237}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2869,7 +2873,7 @@ GameObject:
   - component: {fileID: 665387852}
   - component: {fileID: 665387851}
   - component: {fileID: 665387850}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BackGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3137,7 +3141,7 @@ GameObject:
   - component: {fileID: 715086319}
   - component: {fileID: 715086318}
   - component: {fileID: 715086317}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3232,7 +3236,7 @@ GameObject:
   - component: {fileID: 761151988}
   - component: {fileID: 761151987}
   - component: {fileID: 761151986}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FrontGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3651,7 +3655,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 881674108}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpikeParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3728,7 +3732,7 @@ GameObject:
   - component: {fileID: 993232215}
   - component: {fileID: 993232214}
   - component: {fileID: 993232213}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeftGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3949,7 +3953,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1077470965}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpikeWarningParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3982,7 +3986,7 @@ GameObject:
   - component: {fileID: 1106447342}
   - component: {fileID: 1106447341}
   - component: {fileID: 1106447340}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4127,7 +4131,7 @@ GameObject:
   - component: {fileID: 1319921542}
   - component: {fileID: 1319921541}
   - component: {fileID: 1319921540}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4355,7 +4359,7 @@ GameObject:
   - component: {fileID: 1454611259}
   - component: {fileID: 1454611258}
   - component: {fileID: 1454611257}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4638,7 +4642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1493389586}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Specials
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4673,7 +4677,7 @@ GameObject:
   - component: {fileID: 1545672934}
   - component: {fileID: 1545672933}
   - component: {fileID: 1545672932}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4768,7 +4772,7 @@ GameObject:
   - component: {fileID: 1583799164}
   - component: {fileID: 1583799163}
   - component: {fileID: 1583799162}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4897,7 +4901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1632194928}
   - component: {fileID: 1632194927}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5040,7 +5044,7 @@ GameObject:
   - component: {fileID: 1757286677}
   - component: {fileID: 1757286676}
   - component: {fileID: 1757286675}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -5407,7 +5411,7 @@ GameObject:
   - component: {fileID: 1818301417}
   - component: {fileID: 1818301416}
   - component: {fileID: 1818301415}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -5502,7 +5506,7 @@ GameObject:
   - component: {fileID: 1824027919}
   - component: {fileID: 1824027918}
   - component: {fileID: 1824027917}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpecialGuns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5598,7 +5602,7 @@ GameObject:
   - component: {fileID: 1829814927}
   - component: {fileID: 1829814926}
   - component: {fileID: 1829814925}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RightGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6293,7 +6297,7 @@ GameObject:
   - component: {fileID: 2138361149}
   - component: {fileID: 2138361148}
   - component: {fileID: 2138361147}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InvisWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -6385,7 +6389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2145495424}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpikeSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6466,7 +6470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3486278589341235909, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.6427876
       objectReference: {fileID: 0}
     - target: {fileID: 3486278589341235909, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6474,11 +6478,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3486278589341235909, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7660445
       objectReference: {fileID: 0}
     - target: {fileID: 3486278589341235909, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3486278589341235909, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6486,7 +6490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3486278589341235909, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 260
       objectReference: {fileID: 0}
     - target: {fileID: 3486278589341235909, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -6520,6 +6524,14 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5169702091723959993, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317177136807823184, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6165723723619509954, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
       propertyPath: m_Height
       value: 2.5
@@ -6533,6 +6545,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6640829460055960394, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640829460055960394, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -6540,9 +6556,108 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7649483865616960138, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260612278170574705, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264432525276287871, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8264432525276287871, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
+--- !u!4 &6334818201631701245 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4925509498404278298, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
+  m_PrefabInstance: {fileID: 6334818201631701244}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6334818201631701246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8260612278170574705, guid: 686ddb30b17fc684a934d5e7bd848790, type: 3}
+  m_PrefabInstance: {fileID: 6334818201631701244}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6334818201631701247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6334818201631701246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 6334818201631701245}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 192
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 1
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 0
+  fastApproximateAntialiasing:
+    fastMode: 1
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
+--- !u!114 &6334818201631701248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6334818201631701246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 9c7f579a5d9acb2409ae665e6db70cbb, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
