@@ -25,4 +25,23 @@ public class Bullet : MonoBehaviour
     {
         StopAllCoroutines();
     }
+
+    // Jelle bullet does damage
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     if (other.gameObject.CompareTag("Player"))
+    //     {
+    //         other.gameObject.GetComponent<Health>().TakeDamage(10);
+    //         Destroy(gameObject);
+    //     }
+    // }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<Health>().TakeDamage(10);
+            Destroy(gameObject);
+        }
+    }
 }
