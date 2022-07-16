@@ -60,7 +60,7 @@ public class Manager : MonoBehaviour
                 break;
             
             case "3":
-                arenaSpinning.DiceEffect();
+                arenaSpinning.DiceEffect(); 
                 break;
             
             case "4":
