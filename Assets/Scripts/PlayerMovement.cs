@@ -170,6 +170,9 @@ public class PlayerMovement : MonoBehaviour {
                 rb.velocity = new Vector3(vel.x, 0, vel.z);
             else if (rb.velocity.y > 0) 
                 rb.velocity = new Vector3(vel.x, vel.y / 2, vel.z);
+
+            //Player jump audio
+            gameObject.GetComponent<AudioSource>().Play();
             
             Invoke(nameof(ResetJump), jumpCooldown);
         }
