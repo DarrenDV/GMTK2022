@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FallingFromSky : MonoBehaviour
 {
-    private float fallingSize = 10;
+    private float fallingSize = 40;
     private float spawnSpeed = 1f;
 
     [SerializeField] private GameObject[] fallingObjects;
