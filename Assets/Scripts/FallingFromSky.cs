@@ -17,11 +17,13 @@ public class FallingFromSky : MonoBehaviour
 
     public void StartSpawning()
     {
+        Manager.Instance.effectActive = true;  
         InvokeRepeating("SpawnObject", 1f, spawnSpeed);
     }
 
     public void StopSpawning()
     {
+        Manager.Instance.effectActive = false;
         CancelInvoke();
     }
 

@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +11,8 @@ public class ScoreText : MonoBehaviour
     private float score;
     [SerializeField] private float scorePerSecond;
 
+    public bool canAddScore = true;
+
     private void Start()
     {
         StartCoroutine(Score());
@@ -16,7 +20,7 @@ public class ScoreText : MonoBehaviour
 
     private IEnumerator Score()
     {
-        while (true)
+        while (canAddScore)
         {
             score += scorePerSecond / 4;
             Scoring.totalScore += 5;
@@ -24,5 +28,9 @@ public class ScoreText : MonoBehaviour
             text.text = "Score: " + score.ToString("0");
         }
     }
-    
+
+    private void OnDestroy()
+    {
+        StopAllCoroutines();
+    }
 }

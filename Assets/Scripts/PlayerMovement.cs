@@ -12,8 +12,6 @@ public class PlayerMovement : MonoBehaviour {
     public GameObject arena;
     public GameObject mainPlayer;
 
-    public Manager manager;
-
     //Other
     private Rigidbody rb;
 

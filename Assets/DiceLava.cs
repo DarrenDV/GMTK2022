@@ -20,7 +20,7 @@ public class DiceLava : MonoBehaviour
     private IEnumerator BeginDiceLava()
     {
         //Start Dice lava
-
+        Manager.Instance.effectActive = true;
         platforms.SetActive(true);
 
         yield return new WaitForSeconds(timeUntilLavaStarts);
@@ -41,7 +41,9 @@ public class DiceLava : MonoBehaviour
 
         lavaIsActive = false;
 
-
+        Manager.Instance.effectActive = false;
+        
+        
         StopCoroutine(BeginDiceLava());
     }
 }
