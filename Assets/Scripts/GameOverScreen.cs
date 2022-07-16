@@ -9,7 +9,7 @@ public class GameOverScreen : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI text;
 
-    // // Start is called before the first frame update
+    // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;

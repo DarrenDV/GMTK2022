@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour
     {
         //Application.LoadLevel(1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Scoring.totalScore = 0;
     }
 
     public void QuitGame()
