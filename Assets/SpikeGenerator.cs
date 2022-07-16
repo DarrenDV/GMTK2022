@@ -69,7 +69,7 @@ public class SpikeGenerator : MonoBehaviour
             Destroy(child.gameObject);
         }
         
-        Manager.Instance.effectActive = false;
+        Manager.Instance.EffectHasStopped();
         StopCoroutine(EndSpikes());
     }
 

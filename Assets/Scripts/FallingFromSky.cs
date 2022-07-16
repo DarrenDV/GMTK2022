@@ -7,23 +7,28 @@ public class FallingFromSky : MonoBehaviour
     private float fallingSize = 40;
     private float spawnSpeed = 1f;
 
-    [SerializeField] private GameObject[] fallingObjects;
+    public float timeUntilStopping = 8f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        //StartSpawning();
-    }
+    [SerializeField] private GameObject[] fallingObjects;
 
     public void StartSpawning()
     {
         Manager.Instance.effectActive = true;  
         InvokeRepeating("SpawnObject", 1f, spawnSpeed);
+        StartCoroutine(TimeUntilStop());
+    }
+
+    private IEnumerator TimeUntilStop()
+    {
+        yield return new WaitForSeconds(timeUntilStopping);
+        StopSpawning();
+        
     }
 
     public void StopSpawning()
     {
-        Manager.Instance.effectActive = false;
+        StopCoroutine(TimeUntilStop());
+        Manager.Instance.EffectHasStopped();
         CancelInvoke();
     }
 

@@ -41,7 +41,7 @@ public class DiceLava : MonoBehaviour
 
         lavaIsActive = false;
 
-        Manager.Instance.effectActive = false;
+        Manager.Instance.EffectHasStopped();
         
         
         StopCoroutine(BeginDiceLava());
