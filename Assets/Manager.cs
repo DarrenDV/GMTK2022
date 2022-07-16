@@ -17,6 +17,7 @@ public class Manager : MonoBehaviour
 
     public DiceLava diceLava;
     public FallingFromSky fallingFromSky;
+    public SpikeGenerator spikeGenerator;
 
     public ArenaSpinning arenaSpinning;
 
@@ -56,11 +57,11 @@ public class Manager : MonoBehaviour
                 break;
             
             case "2":
-                arenaSpinning.DiceEffect();
+                spikeGenerator.RunDiceEffect();
                 break;
             
             case "3":
-                arenaSpinning.DiceEffect(); 
+                diceLava.StartDiceLava();
                 break;
             
             case "4":
@@ -68,11 +69,11 @@ public class Manager : MonoBehaviour
                 break;
             
             case "5":
-                fallingFromSky.StartSpawning();
+                //TODO ADD EFFECT
                 break;
             
             case "6":
-                fallingFromSky.StartSpawning();
+                //TODO ADD EFFECT
                 break;
         }
     }
