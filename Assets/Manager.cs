@@ -16,6 +16,7 @@ public class Manager : MonoBehaviour
     public GameObject diceCamImage;
 
     public DiceLava diceLava;
+    public FallingFromSky fallingFromSky;
 
     public ArenaSpinning arenaSpinning;
 
@@ -63,15 +64,15 @@ public class Manager : MonoBehaviour
                 break;
             
             case "4":
-                diceLava.StartDiceLava();
+                fallingFromSky.StartSpawning();
                 break;
             
             case "5":
-                diceLava.StartDiceLava();
+                fallingFromSky.StartSpawning();
                 break;
             
             case "6":
-                diceLava.StartDiceLava();
+                fallingFromSky.StartSpawning();
                 break;
         }
     }
