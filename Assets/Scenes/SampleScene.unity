@@ -1230,7 +1230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   maxHealth: 100
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 623967560}
 --- !u!1 &448206310
 GameObject:
   m_ObjectHideFlags: 0
