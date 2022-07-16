@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -102,6 +103,14 @@ public class Manager : MonoBehaviour
         }
         
         StopCoroutine(DiceRollTimer());
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            diceLava.StartDiceLava();
+        }
     }
 
     public void ExecuteDiceResult(string diceSide)
