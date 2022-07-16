@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4500668058629142963}
   - component: {fileID: 8545237269664357358}
   - component: {fileID: 5591891136756658790}
+  - component: {fileID: 6467798366552180672}
   m_Layer: 0
   m_Name: FallingChip
   m_TagString: Untagged
@@ -113,3 +114,15 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &6467798366552180672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4500668058629142965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 013ba17a604781f45a3ea70f302daf69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

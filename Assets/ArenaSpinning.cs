@@ -33,7 +33,7 @@ public class ArenaSpinning : MonoBehaviour
         spinningSpeed = diceEffectRoutineEffect;
         yield return new WaitForSeconds(diceEffectRoutineDuration);
         spinningSpeed = defaultSpeed;
-        Manager.Instance.effectActive = false;
+        Manager.Instance.EffectHasStopped();
         StopCoroutine(DiceEffectCoroutine());
         
     }

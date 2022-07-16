@@ -19,6 +19,7 @@ public class Manager : MonoBehaviour
     public SpikeGenerator spikeGenerator;
     public ArenaSpinning arenaSpinning;
     public RoulletteBallShooter roulletteBallShooter;
+    public Guns guns;
 
     //Other references
     [SerializeField] private Text diceMessage;
@@ -26,6 +27,10 @@ public class Manager : MonoBehaviour
     private float diceMessageTime = 3f;
 
     public bool effectActive;
+
+
+    [SerializeField] private float firstDiceTime = 5f;
+    public float timeBetweenRolls = 10f;
 
     public static Manager Instance
     {
@@ -50,6 +55,53 @@ public class Manager : MonoBehaviour
         {
             instance = this;
         }
+    }
+
+    private void Start()
+    {
+        StartCoroutine(FirstDiceRoll());
+    }
+
+    private IEnumerator FirstDiceRoll()
+    {
+        yield return new WaitForSeconds(firstDiceTime);
+        RollDice();
+        StopCoroutine(FirstDiceRoll());
+    }
+
+    private void RollDice()
+    {
+        diceCamImage.SetActive(true);
+        hasThrown = true;
+        diceRoll.Throw();
+    }
+
+    public void EffectHasStopped()
+    {
+        effectActive = false;
+        StartCoroutine(DiceRollTimer());
+    }
+
+    private IEnumerator DiceRollTimer()
+    {
+        while(effectActive)
+        {
+            yield return null;
+        }
+        
+        yield return new WaitForSeconds(timeBetweenRolls);
+        RollDice();
+        
+        if (timeBetweenRolls > 0)
+        {
+            timeBetweenRolls -= 0.5f;
+        }
+        else
+        {
+            timeBetweenRolls = 0;
+        }
+        
+        StopCoroutine(DiceRollTimer());
     }
 
     public void ExecuteDiceResult(string diceSide)
@@ -82,30 +134,12 @@ public class Manager : MonoBehaviour
                 break;
 
             case "6":
-                //TODO ADD EFFECT
-                DiceMessage("Dikke pasta saus");
+                guns.DiceEffect();
+                DiceMessage("More guns!");
                 break;
         }
     }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            diceCamImage.SetActive(true);
-            hasThrown = true;
-            diceRoll.Throw();
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            diceLava.StartDiceLava();
-        }
-    }
-
+    
     private void DiceMessage(string message)
     {
         diceMessage.text = message;
