@@ -64,7 +64,8 @@ public class DiceSideCheck : MonoBehaviour
             }
         }
         
-        Debug.Log(highestDice.name);
+        //Debug.Log(highestDice.name);
+        manager.ExecuteDiceResult(highestDice.name);
         manager.hasThrown = false;
         StartCoroutine(RemoveDiceImage());
     }

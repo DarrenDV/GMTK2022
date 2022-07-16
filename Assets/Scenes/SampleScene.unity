@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 221258113}
   - component: {fileID: 221258114}
   m_Layer: 0
-  m_Name: Side 3
+  m_Name: 3
   m_TagString: DiceSide
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -634,7 +634,7 @@ GameObject:
   - component: {fileID: 384249187}
   - component: {fileID: 384249188}
   m_Layer: 0
-  m_Name: Side 5
+  m_Name: 5
   m_TagString: DiceSide
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -792,7 +792,7 @@ GameObject:
   - component: {fileID: 448206311}
   - component: {fileID: 448206312}
   m_Layer: 0
-  m_Name: Side 1
+  m_Name: 1
   m_TagString: DiceSide
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1318,7 +1318,7 @@ GameObject:
   - component: {fileID: 680449128}
   - component: {fileID: 680449129}
   m_Layer: 0
-  m_Name: Side 2
+  m_Name: 2
   m_TagString: DiceSide
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1815,7 +1815,7 @@ GameObject:
   - component: {fileID: 968605263}
   - component: {fileID: 968605264}
   m_Layer: 0
-  m_Name: Side 4
+  m_Name: 4
   m_TagString: DiceSide
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3111,7 +3111,7 @@ GameObject:
   - component: {fileID: 1900310295}
   - component: {fileID: 1900310296}
   m_Layer: 0
-  m_Name: Side 6
+  m_Name: 6
   m_TagString: DiceSide
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

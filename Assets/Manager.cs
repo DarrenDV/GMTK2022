@@ -19,6 +19,37 @@ public class Manager : MonoBehaviour
         
     }
 
+    public void ExecuteDiceResult(string diceSide)
+    {
+        switch (diceSide)
+        {
+            case "1":
+                diceLava.StartDiceLava();
+                break;
+            
+            case "2":
+                diceLava.StartDiceLava();
+                break;
+            
+            case "3":
+                diceLava.StartDiceLava();
+                break;
+            
+            case "4":
+                diceLava.StartDiceLava();
+                break;
+            
+            case "5":
+                diceLava.StartDiceLava();
+                break;
+            
+            case "6":
+                diceLava.StartDiceLava();
+                break;
+        }
+    }
+    
+
     // Update is called once per frame
     void Update()
     {
