@@ -470,8 +470,9 @@ MonoBehaviour:
   diceCamImage: {fileID: 566399260}
   diceLava: {fileID: 1150960523}
   fallingFromSky: {fileID: 2078135232}
-  spikeGenerator: {fileID: 0}
+  spikeGenerator: {fileID: 183084158}
   arenaSpinning: {fileID: 489580260}
+  roulletteBallShooter: {fileID: 1795355196}
   effectActive: 0
 --- !u!4 &105770371
 Transform:
