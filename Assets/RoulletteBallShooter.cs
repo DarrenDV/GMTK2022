@@ -12,12 +12,4 @@ public class RoulletteBallShooter : MonoBehaviour
         GameObject rouletteBall = Instantiate(ballPrefab, transform.position, Quaternion.identity);
         rouletteBall.GetComponent<RouletteBall>().Launch(transform.up);
     }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            DiceEffect();
-        }
-    }
 }

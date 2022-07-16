@@ -28,15 +28,6 @@ public class Guns : MonoBehaviour
         StartCoroutine(Shot());
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            DiceEffect();
-        }
-    }
-    
-    
     public void DiceEffect()
     {
         specialParent.SetActive(true);

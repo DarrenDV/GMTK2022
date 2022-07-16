@@ -46,4 +46,3 @@ MonoBehaviour:
   fallingObjects:
   - {fileID: 4500668058629142965, guid: 433b0791ea626a64e8a6edd665dd17f8, type: 3}
   - {fileID: 4500668058629142965, guid: 2bc7eb36b40a1e84b984a63e88773168, type: 3}
-  - {fileID: 0}
