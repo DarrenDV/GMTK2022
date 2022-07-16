@@ -6040,6 +6040,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8208134791493783021, guid: 8529c791e32fc7e4191a408052d3049b, type: 3}
+      propertyPath: spawnSpeed
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208134791493783021, guid: 8529c791e32fc7e4191a408052d3049b, type: 3}
+      propertyPath: fallingObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 8408397662825081775, guid: cfa688d6f807c7240baa61c238b8772b, type: 3}
     - target: {fileID: 8208134791493783022, guid: 8529c791e32fc7e4191a408052d3049b, type: 3}
       propertyPath: m_RootOrder
       value: 6

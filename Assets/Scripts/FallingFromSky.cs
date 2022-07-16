@@ -5,7 +5,7 @@ using UnityEngine;
 public class FallingFromSky : MonoBehaviour
 {
     private float fallingSize = 40;
-    private float spawnSpeed = 1f;
+    [SerializeField] private float spawnSpeed = 1f;
 
     public float timeUntilStopping = 8f;
 
@@ -14,7 +14,7 @@ public class FallingFromSky : MonoBehaviour
     public void StartSpawning()
     {
         Manager.Instance.effectActive = true;  
-        InvokeRepeating("SpawnObject", 1f, spawnSpeed);
+        InvokeRepeating("SpawnObject", timeUntilStopping, spawnSpeed);
         StartCoroutine(TimeUntilStop());
     }
 
@@ -34,6 +34,7 @@ public class FallingFromSky : MonoBehaviour
 
     void SpawnObject()
     {
+        Debug.Log("Aids");
         Vector3 positionOffset = new Vector3(Random.Range(-fallingSize, fallingSize), 0, Random.Range(-fallingSize, fallingSize));
         Vector3 instantiatePosition = positionOffset + gameObject.transform.position;
         //Vector3 instantiateRotation = new Vector3(Random.Range(-180, 180), 0, Random.Range(-180, 180));
