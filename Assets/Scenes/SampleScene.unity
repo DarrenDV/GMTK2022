@@ -1230,6 +1230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   maxHealth: 100
+  scoreText: {fileID: 0}
 --- !u!1 &448206310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,7 +1669,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &499603402
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2415,6 +2416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 623967561}
   scorePerSecond: 20
+  canAddScore: 1
 --- !u!114 &623967561
 MonoBehaviour:
   m_ObjectHideFlags: 0
