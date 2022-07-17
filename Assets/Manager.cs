@@ -107,13 +107,13 @@ public class Manager : MonoBehaviour
         StopCoroutine(DiceRollTimer());
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            diceLava.StartDiceLava();
-        }
-    }
+    // private void Update()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.Y))
+    //     {
+    //         arenaSpinning.DiceEffect();
+    //     }
+    // }
 
     public void ExecuteDiceResult(string diceSide)
     {
