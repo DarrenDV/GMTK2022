@@ -6,7 +6,8 @@ public class DiceLava : MonoBehaviour
 {
     [SerializeField] private GameObject platforms;
     [SerializeField] private GameObject arena;
-
+    [SerializeField] private AudioSource audioSource;
+    
     public float timeUntilLavaStarts = 5f;
     public float timeLavaStays = 10f;
     
@@ -26,6 +27,7 @@ public class DiceLava : MonoBehaviour
         yield return new WaitForSeconds(timeUntilLavaStarts);
 
         arena.SetActive(false);
+        audioSource.Play();
         lavaIsActive = true;
 
         //Wait in dice lava
@@ -33,6 +35,7 @@ public class DiceLava : MonoBehaviour
 
 
         //Stop dice lava
+        audioSource.Stop();
         arena.SetActive(true);
         yield return new WaitForSeconds(0.25f);
 

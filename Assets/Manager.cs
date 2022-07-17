@@ -133,7 +133,8 @@ public class Manager : MonoBehaviour
                 break;
 
             case "4":
-                fallingFromSky.StartSpawning();
+                //fallingFromSky.StartSpawning();
+                roulletteBallShooter.DiceEffect();
                 DiceMessage("Objects will fall from the sky!");
                 break;
 
@@ -143,7 +144,8 @@ public class Manager : MonoBehaviour
                 break;
 
             case "6":
-                guns.DiceEffect();
+                //guns.DiceEffect();
+                roulletteBallShooter.DiceEffect();
                 DiceMessage("More guns!");
                 break;
         }
