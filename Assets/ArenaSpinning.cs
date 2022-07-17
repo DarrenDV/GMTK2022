@@ -11,8 +11,7 @@ public class ArenaSpinning : MonoBehaviour
     public float diceEffectRoutineEffect;
 
     private int score;
-    [SerializeField] private Scoring scoring;
-    
+
     // Start is called before the first frame update
     void Start()
     {
