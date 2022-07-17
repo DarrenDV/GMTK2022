@@ -43,6 +43,11 @@ public class RouletteBall : MonoBehaviour
                 canTakeDamage = false;
             }
         }
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            rb.constraints = RigidbodyConstraints.FreezePositionY;
+        }
     }
 
     private IEnumerator CanTakeDamageAgain()
