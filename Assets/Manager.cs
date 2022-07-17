@@ -25,6 +25,7 @@ public class Manager : MonoBehaviour
 
     //Other references
     [SerializeField] private TextMeshProUGUI diceMessage; //[SerializeField] private Text diceMessage;
+    [SerializeField] private AudioSource ominousDiceSound;
 
     private float diceMessageTime = 3f;
 
@@ -152,6 +153,7 @@ public class Manager : MonoBehaviour
     
     private void DiceMessage(string message)
     {
+        ominousDiceSound.Play();
         diceMessage.text = message;
         diceMessage.enabled = true;
         StartCoroutine(WaitThenDisableDiceMessage());
