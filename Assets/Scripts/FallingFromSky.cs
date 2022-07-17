@@ -10,11 +10,13 @@ public class FallingFromSky : MonoBehaviour
     public float timeUntilStopping = 8f;
 
     [SerializeField] private GameObject[] fallingObjects;
-
+    [SerializeField] private AudioSource jackpotSound;
+ 
     public void StartSpawning()
     {
         Manager.Instance.effectActive = true;  
         InvokeRepeating("SpawnObject", 0f, spawnSpeed);
+        jackpotSound.Play();
         StartCoroutine(TimeUntilStop());
     }
 
