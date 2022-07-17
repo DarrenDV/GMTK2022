@@ -8583,6 +8583,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 341023320738077514, guid: 704db86dedf5fa24ab3270be8ba4b267, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 341023321121091712, guid: 704db86dedf5fa24ab3270be8ba4b267, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -8684,16 +8688,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 341023321717785088, guid: 704db86dedf5fa24ab3270be8ba4b267, type: 3}
+      propertyPath: m_text
+      value: As long as you've got a chip and a chair, there's still hope
+      objectReference: {fileID: 0}
+    - target: {fileID: 341023321717785088, guid: 704db86dedf5fa24ab3270be8ba4b267, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 341023321717785088, guid: 704db86dedf5fa24ab3270be8ba4b267, type: 3}
       propertyPath: m_fontSize
-      value: 60
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 341023321717785088, guid: 704db86dedf5fa24ab3270be8ba4b267, type: 3}
       propertyPath: m_fontSizeBase
-      value: 60
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 341023321717785088, guid: 704db86dedf5fa24ab3270be8ba4b267, type: 3}
       propertyPath: m_VerticalAlignment
