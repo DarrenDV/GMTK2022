@@ -70,15 +70,4 @@ public class SpikeGenerator : MonoBehaviour
         Manager.Instance.EffectHasStopped();
         StopCoroutine(EndSpikes());
     }
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            RunDiceEffect();
-        }
-    }
 }
