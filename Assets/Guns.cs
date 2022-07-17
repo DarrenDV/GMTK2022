@@ -14,10 +14,13 @@ public class Guns : MonoBehaviour
 
     [SerializeField] private GameObject specialParent;
 
+    private float timeBetweenShotsNow;
+    
     public float gunStrength = 0.5f;
 
     public float timeBetweenShots = 1f;
-
+    public float timeBetweenShotsDice = 0.5f;
+    
     public bool diceEffect;
 
     public float diceEffectAlive = 5f;
@@ -26,12 +29,14 @@ public class Guns : MonoBehaviour
     void Start()
     {
         StartCoroutine(Shot());
+        timeBetweenShotsNow = timeBetweenShots;
     }
 
     public void DiceEffect()
     {
         specialParent.SetActive(true);
         diceEffect = true;
+        timeBetweenShotsNow = timeBetweenShotsDice;
         Manager.Instance.effectActive = true;
         StartCoroutine(DiceEffectTime());
     }
@@ -41,6 +46,7 @@ public class Guns : MonoBehaviour
         yield return new WaitForSeconds(diceEffectAlive);
         diceEffect = false;
         specialParent.SetActive(false);
+        timeBetweenShotsNow = timeBetweenShots;
         Manager.Instance.EffectHasStopped();
         StopCoroutine(DiceEffectTime());
     }
@@ -49,7 +55,7 @@ public class Guns : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(timeBetweenShots);
+            yield return new WaitForSeconds(timeBetweenShotsNow);
         
             foreach (GameObject gun in guns)
             {
