@@ -18,5 +18,9 @@ public class FallingObject : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

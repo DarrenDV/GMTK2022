@@ -14,7 +14,7 @@ public class FallingFromSky : MonoBehaviour
     public void StartSpawning()
     {
         Manager.Instance.effectActive = true;  
-        InvokeRepeating("SpawnObject", timeUntilStopping, spawnSpeed);
+        InvokeRepeating("SpawnObject", 0f, spawnSpeed);
         StartCoroutine(TimeUntilStop());
     }
 
