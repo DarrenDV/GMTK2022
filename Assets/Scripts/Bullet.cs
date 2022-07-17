@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private float secondsToDeath = 5f;
     public Rigidbody rb;
+    [SerializeField] private float bounceForce = 5f;
     
     // Start is called before the first frame update
     void Start()
@@ -35,7 +36,9 @@ public class Bullet : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Wall"))
         {
-            Destroy(gameObject);
+            Vector3 dir = collision.contacts[0].point - transform.position;
+            dir = -dir.normalized;
+            rb.AddForce(dir * bounceForce, ForceMode.Impulse);
         }
     }
 }

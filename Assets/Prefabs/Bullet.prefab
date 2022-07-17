@@ -111,6 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   secondsToDeath: 5
   rb: {fileID: 8774905066054894008}
+  bounceForce: 3
 --- !u!54 &8774905066054894008
 Rigidbody:
   m_ObjectHideFlags: 0

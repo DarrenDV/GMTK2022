@@ -3097,7 +3097,7 @@ MonoBehaviour:
   totem: {fileID: 1632194926}
   specialParent: {fileID: 1493389585}
   gunStrength: 10
-  timeBetweenShots: 1
+  timeBetweenShots: 1.5
   diceEffect: 0
   diceEffectAlive: 5
 --- !u!82 &624739366
