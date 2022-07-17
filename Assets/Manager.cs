@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Manager : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class Manager : MonoBehaviour
     public Guns guns;
 
     //Other references
-    [SerializeField] private Text diceMessage;
+    [SerializeField] private TextMeshProUGUI diceMessage; //[SerializeField] private Text diceMessage;
 
     private float diceMessageTime = 3f;
 
@@ -119,34 +120,32 @@ public class Manager : MonoBehaviour
         {
             case "1":
                 arenaSpinning.DiceEffect();
-                DiceMessage("Arena is Going to Spin!");
+                DiceMessage("Spin to win!"); // Arena is Going to Spin!
                 break;
 
             case "2":
                 spikeGenerator.RunDiceEffect();
-                DiceMessage("Spikes are coming out of the ground!");
+                DiceMessage("The house always wins"); // Spikes are coming out of the ground!
                 break;
 
             case "3":
                 diceLava.StartDiceLava();
-                DiceMessage("The floor will be lava!");
+                DiceMessage("As long as you've got a chip and a chair, there's still hope"); // The floor will be lava! //As long as you’ve got ‘a chip and a chair’, there’s still hope //You've got to know when to fold 'em!
                 break;
 
             case "4":
-                //fallingFromSky.StartSpawning();
-                roulletteBallShooter.DiceEffect();
-                DiceMessage("Objects will fall from the sky!");
+                fallingFromSky.StartSpawning();
+                DiceMessage("You hit the jackpot, of death!"); // Objects will fall from the sky!
                 break;
 
             case "5":
                 roulletteBallShooter.DiceEffect();
-                DiceMessage("A roullette ball will be launched!");
+                DiceMessage("Everything on RED!"); // A roullette ball will be launched!
                 break;
 
             case "6":
-                //guns.DiceEffect();
-                roulletteBallShooter.DiceEffect();
-                DiceMessage("More guns!");
+                guns.DiceEffect();
+                DiceMessage("Luck of the draw!"); // More guns!
                 break;
         }
     }
