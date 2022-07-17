@@ -11,25 +11,12 @@ public class DiceSideCheck : MonoBehaviour
     [SerializeField] private Manager manager;
     [SerializeField] private GameObject diceCamImage;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerStay(Collider other)
     {
         if (manager.hasThrown)
         {
             if (other.CompareTag("DiceSide"))
             {
-                Debug.Log("Wejema");
                 StartCoroutine(WaitSomeSecondsBeforeAccept());
             }
         }
