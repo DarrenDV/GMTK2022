@@ -111,7 +111,7 @@ public class Manager : MonoBehaviour
     // {
     //     if (Input.GetKeyDown(KeyCode.Y))
     //     {
-    //         arenaSpinning.DiceEffect();
+    //         roulletteBallShooter.DiceEffect();
     //     }
     // }
 
