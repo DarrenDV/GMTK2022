@@ -118,26 +118,22 @@ public class Manager : MonoBehaviour
         switch (diceSide)
         {
             case "1":
-                //arenaSpinning.DiceEffect();
-                roulletteBallShooter.DiceEffect();
+                arenaSpinning.DiceEffect();
                 DiceMessage("Arena is Going to Spin!");
                 break;
 
             case "2":
-                //spikeGenerator.RunDiceEffect();
-                roulletteBallShooter.DiceEffect();
+                spikeGenerator.RunDiceEffect();
                 DiceMessage("Spikes are coming out of the ground!");
                 break;
 
             case "3":
-                //diceLava.StartDiceLava();
-                roulletteBallShooter.DiceEffect();
+                diceLava.StartDiceLava();
                 DiceMessage("The floor will be lava!");
                 break;
 
             case "4":
-                //fallingFromSky.StartSpawning();
-                roulletteBallShooter.DiceEffect();
+                fallingFromSky.StartSpawning();
                 DiceMessage("Objects will fall from the sky!");
                 break;
 
@@ -147,8 +143,7 @@ public class Manager : MonoBehaviour
                 break;
 
             case "6":
-                //guns.DiceEffect();
-                roulletteBallShooter.DiceEffect();
+                guns.DiceEffect();
                 DiceMessage("More guns!");
                 break;
         }
