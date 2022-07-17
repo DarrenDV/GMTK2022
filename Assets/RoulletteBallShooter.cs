@@ -10,6 +10,6 @@ public class RoulletteBallShooter : MonoBehaviour
     {
         Manager.Instance.effectActive = true;
         GameObject rouletteBall = Instantiate(ballPrefab, transform.position, Quaternion.identity);
-        rouletteBall.GetComponent<RouletteBall>().Launch(transform.up);
+        rouletteBall.GetComponent<RouletteBall>().Launch(transform.right);
     }
 }
