@@ -8657,3 +8657,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!45 &6334818201631701252
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6334818201631701246}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 76a781816f6a36d4494c024bb0ddcedc, type: 2}
