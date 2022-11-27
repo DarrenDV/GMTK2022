@@ -13,6 +13,8 @@ public class Health : MonoBehaviour
 
     [SerializeField] private Slider healthSlider;
 
+    [SerializeField] private Analytics analytics;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +45,8 @@ public class Health : MonoBehaviour
         // play death animation
         // play death sound
         // game over screen
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //We do this after analytics now
+        analytics.roundEnd.Invoke();
         
     }
 

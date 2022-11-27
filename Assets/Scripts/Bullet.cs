@@ -8,12 +8,15 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float secondsToDeath = 5f;
     public Rigidbody rb;
     [SerializeField] private float bounceForce = 5f;
+
+    [SerializeField] private Analytics analytics;
     
     // Start is called before the first frame update
     void Start()
     {
         //rb.AddForce(Vector3.forward * 10, ForceMode.Impulse);
         StartCoroutine(Die());
+        analytics = GameObject.Find("AnalyticsManager").GetComponent<Analytics>();
     }
 
     private IEnumerator Die()
@@ -32,6 +35,7 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(10);
+            analytics.bulletHits++;
             Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("Wall"))

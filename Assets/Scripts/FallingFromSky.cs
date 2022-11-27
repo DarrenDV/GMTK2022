@@ -36,7 +36,6 @@ public class FallingFromSky : MonoBehaviour
 
     void SpawnObject()
     {
-        Debug.Log("Aids");
         Vector3 positionOffset = new Vector3(Random.Range(-fallingSize, fallingSize), 0, Random.Range(-fallingSize, fallingSize));
         Vector3 instantiatePosition = positionOffset + gameObject.transform.position;
         //Vector3 instantiateRotation = new Vector3(Random.Range(-180, 180), 0, Random.Range(-180, 180));
