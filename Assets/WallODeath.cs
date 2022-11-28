@@ -12,7 +12,6 @@ public class WallODeath : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            analytics.touchedWallOfDeath = true;
             collision.gameObject.GetComponent<Health>().TakeDamage(100);
         }
     }
@@ -21,6 +20,8 @@ public class WallODeath : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            analytics.touchedWallOfDeath = true;
+            Debug.Log(analytics.touchedWallOfDeath);
             other.gameObject.GetComponent<Health>().TakeDamage(100);
         }
     }

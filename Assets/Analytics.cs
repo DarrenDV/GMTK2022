@@ -26,6 +26,9 @@ public class Analytics : MonoBehaviour
 
     public void RoundEnd()
     {
+        Debug.Log(highScore);
+        Debug.Log(touchedWallOfDeath);
+
         //Add events in here
         Dictionary<string, object> parameters = new Dictionary<string, object>()
         {
