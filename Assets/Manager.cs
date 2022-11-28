@@ -31,6 +31,8 @@ public class Manager : MonoBehaviour
 
     public bool effectActive;
 
+    [SerializeField] private Analytics analytics;
+
 
     [SerializeField] private float firstDiceTime = 5f;
     public float timeBetweenRolls = 10f;
@@ -82,6 +84,7 @@ public class Manager : MonoBehaviour
     public void EffectHasStopped()
     {
         effectActive = false;
+        analytics.round++;
         StartCoroutine(DiceRollTimer());
     }
 

@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class ScoreText : MonoBehaviour
 {
     [SerializeField] private Text text;
-    private float score;
+    public float score;
     [SerializeField] private float scorePerSecond;
 
     public bool canAddScore = true;

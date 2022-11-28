@@ -11,7 +11,13 @@ public class Analytics : MonoBehaviour
     public float bulletHits = 0; //How many of the hits a player takes in a single game are caused by bullets?
     public bool fellInLava = false; //How many times does the player fall in lava?
 
+    public float highScore = 0;
+    public bool touchedWallOfDeath = false;
+
+    public int round = 0;
+
     public UnityEvent roundEnd;
+
 
     public void Start()
     {
@@ -24,8 +30,13 @@ public class Analytics : MonoBehaviour
         Dictionary<string, object> parameters = new Dictionary<string, object>()
         {
             { "hitsByBullet", bulletHits },
-            { "lavaFall", fellInLava}
+            { "lavaFall", fellInLava},
+            { "touchedWallOfDeath", touchedWallOfDeath},
+            { "highScore", highScore},
+            { "round", round}
         };
+
+        Debug.Log(parameters);
             
         AnalyticsService.Instance.CustomData("roundEnd", parameters); 
         AnalyticsService.Instance.Flush();

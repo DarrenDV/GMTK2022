@@ -522,6 +522,7 @@ MonoBehaviour:
   diceMessage: {fileID: 644615809}
   ominousDiceSound: {fileID: 1713640375}
   effectActive: 0
+  analytics: {fileID: 1493040552}
   firstDiceTime: 5
   timeBetweenRolls: 10
 --- !u!4 &105770371
@@ -1117,6 +1118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46e2f8f4e7ce4e9f67ac5c88cba97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  analytics: {fileID: 1493040552}
 --- !u!65 &314694330
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6771,6 +6773,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletHits: 0
   fellInLava: 0
+  highScore: 0
+  touchedWallOfDeath: 0
+  round: 0
   roundEnd:
     m_PersistentCalls:
       m_Calls: []

@@ -40,6 +40,7 @@ public class Health : MonoBehaviour
 
     void Die()
     {
+        analytics.highScore = scoreText.score;
         scoreText.canAddScore = false;
         Destroy(scoreText.gameObject);
         // play death animation
